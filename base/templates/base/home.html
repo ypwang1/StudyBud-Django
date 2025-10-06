@@ -10,7 +10,7 @@
     <!-- Room List Start -->
     <div class="roomList">
       <div class="mobile-menu">
-        <form class="header__search">
+        <form class="header__search" action="{% url 'home' %}" method="GET">
           <label>
             <svg
               version="1.1"
@@ -28,7 +28,9 @@
           </label>
         </form>
         <div class="mobile-menuItems">
-          <a class="btn btn--main btn--pill" href="#">Browse Topics</a>
+          <a class="btn btn--main btn--pill" href="{% url 'home' %}"
+            >Browse Topics</a
+          >
           <a class="btn btn--main btn--pill" href="#">Recent Activities</a>
         </div>
       </div>
